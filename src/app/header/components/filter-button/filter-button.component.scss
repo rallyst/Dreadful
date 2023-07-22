@@ -1,0 +1,22 @@
+.filters-button {
+  width: 135px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-left: 2px solid white;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 2px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color .25s ease;
+
+  &:hover {
+    color: rgb(224, 223, 223);
+    border-left: 2px solid rgb(224, 223, 223);
+  }
+}
+
+img {
+  vertical-align: middle;
+}

@@ -1,0 +1,22 @@
+header {
+  width: 100vw;
+  height: auto;
+  background-color: black;
+  color: white;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding-right: 20px;
+  max-width: 80%;
+}
+
+.header-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

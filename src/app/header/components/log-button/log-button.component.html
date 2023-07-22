@@ -1,0 +1,8 @@
+<button class="log-button"(click)="onClick()">
+  <span *ngIf="isLoggedIn; else notLoggedIn">
+    Logout <img src="assets/icon-logout.png" alt="Logout Icon">
+  </span>
+  <ng-template #notLoggedIn>
+    Login <img src="assets/icon-login.png" alt="Login Icon">
+  </ng-template>
+</button>

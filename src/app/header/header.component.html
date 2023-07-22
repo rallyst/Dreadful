@@ -1,1 +1,16 @@
-<p>header works!</p>
+<header>
+  <div class="header-wrapper">
+    <app-logo></app-logo>
+    <div>Filter</div>
+    <div class="header-actions">
+      <ng-container *ngIf="isHomePage">
+        <app-filter-button></app-filter-button>
+      </ng-container>
+      
+      <app-log-button 
+      [isLoggedIn]="isLoggedIn" 
+      (loginLogoutClicked)="onLoginLogoutClicked()"></app-log-button>
+      <app-subscribe-button>Star your free trial</app-subscribe-button>
+    </div>
+  </div>
+</header>
