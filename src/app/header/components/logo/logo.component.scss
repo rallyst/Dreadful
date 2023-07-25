@@ -1,4 +1,8 @@
-.header-logo img {
-  width: 360px;
-  height: auto;
+.header-logo {
+  cursor: pointer;
+
+  img {
+    width: 360px;
+    height: auto;
+  }
 }

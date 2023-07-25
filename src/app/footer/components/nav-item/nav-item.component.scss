@@ -1,0 +1,11 @@
+.nav-item a {
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, .6);
+  font-weight: bold;
+
+  &:hover {
+    color: rgba(255, 255, 255, .4);
+  }
+}

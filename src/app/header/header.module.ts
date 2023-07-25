@@ -5,6 +5,7 @@ import { LogoComponent } from './components/logo/logo.component';
 import { SubscribeButtonComponent } from './components/subscribe-button/subscribe-button.component';
 import { LogButtonComponent } from './components/log-button/log-button.component';
 import { FilterButtonComponent } from './components/filter-button/filter-button.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { FilterButtonComponent } from './components/filter-button/filter-button.
   ],
   imports: [
     CommonModule,
+    RouterModule
   ],
   exports: [
     HeaderComponent
