@@ -1,0 +1,12 @@
+<div class="grid-item-card" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+  <div class="overlay" >
+    <!-- [ngStyle]="overlayStyle" -->
+    <div class="name">{{ itemData.title }}</div>
+    <div class="description" *ngIf="showDescription">
+      <div class="date">{{ itemData.releaseYear }}</div>
+      <div>{{ itemData.description }}</div>
+    </div>
+    
+  </div>
+  <img [src]="itemData.images.posterArt.url" alt="{{ itemData.name }}">
+</div>

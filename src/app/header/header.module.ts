@@ -6,6 +6,7 @@ import { SubscribeButtonComponent } from './components/subscribe-button/subscrib
 import { LogButtonComponent } from './components/log-button/log-button.component';
 import { FilterButtonComponent } from './components/filter-button/filter-button.component';
 import { RouterModule } from '@angular/router';
+import { FilterComponent } from '../shared/filter/filter.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { RouterModule } from '@angular/router';
     LogoComponent,
     SubscribeButtonComponent,
     LogButtonComponent,
-    FilterButtonComponent
+    FilterButtonComponent,
+    FilterComponent
   ],
   imports: [
     CommonModule,

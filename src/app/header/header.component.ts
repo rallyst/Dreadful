@@ -9,7 +9,8 @@ import { Router, NavigationEnd } from '@angular/router';
 export class HeaderComponent implements OnInit {
   isLoggedIn = false;
   isHomePage = false;
-
+  isFilterVisible = false;
+  
   constructor(private router: Router) { }
 
   ngOnInit(): void {
@@ -22,6 +23,10 @@ export class HeaderComponent implements OnInit {
 
   onLoginLogoutClicked() {
     this.isLoggedIn = !this.isLoggedIn;
+  }
+
+  onFilterButtonClick() {
+    this.isFilterVisible = !this.isFilterVisible;
   }
 
 }

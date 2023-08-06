@@ -1,0 +1,9 @@
+<div class="pagination-container">
+  <ul>
+    <li *ngFor="let page of totalPages">
+      <button 
+        [class.active]="page === currentPage" 
+        (click)="pageChange.emit(page)">{{ page }}</button>
+    </li>
+  </ul>
+</div>

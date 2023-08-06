@@ -1,0 +1,17 @@
+<div class="content-grid">
+  <div class="grid-wrapper">
+    <h3>Popular Series</h3>  
+    <div class="grid-container">
+      <!-- <ng-content> -->
+        <!-- <ng-container *ngFor="let item of pagedItems">
+          <app-grid-item [itemData]="item"></app-grid-item>
+        </ng-container> -->
+      <!-- </ng-content>  -->
+    </div>
+    <app-pagination
+      [totalPages]="totalPages"
+      [currentPage]="currentPage"
+      (pageChange)="onPageChange($event)"
+    ></app-pagination>
+  </div>
+</div>

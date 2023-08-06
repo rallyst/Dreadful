@@ -1,0 +1,46 @@
+.grid-item-card {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 250px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    .overlay {
+      height: 80%;
+    }
+  }
+}
+
+.grid-item-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 8px;
+  transition: height .4s ease;
+}
+
+.overlay .name {
+  font-weight: bold;
+}
+
+.overlay .description {
+  display: none;
+}
+
+
+
+.overlay:hover .description {
+  display: block;
+}
